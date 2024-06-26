@@ -122,19 +122,6 @@ img { /* Image */
     background: linear-gradient(rgb(179, 179, 255), rgb(149, 108, 255));
 }
 
-#note > #ic1:hover { /* Note image overlay */
-    background: linear-gradient(rgb(117, 101, 255), rgb(127, 155, 255));
-    transition: 0.4s;
-}
-#media > #ic1:hover { /* Media image overlay */
-    background: linear-gradient(rgb(252, 184, 83), rgb(252, 83, 83));
-    transition: 0.4s;
-}
-#business > #ic1:hover { /* Business image overlay */
-    background: linear-gradient(rgb(149, 108, 255), rgb(179, 179, 255));
-    transition: 0.4s;
-}
-
 .conteudo-container { /* Card container without the image (text) */
     display: flex;
     flex-direction: column;
