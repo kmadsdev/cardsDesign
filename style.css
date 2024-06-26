@@ -1,0 +1,151 @@
+body {
+    background-color: rgb(69, 69, 69);
+}
+
+.secao-cards { /* Section where all the cards are in */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span { /* Changes type, time posted, Author, Read More labels */
+    font-weight: bold;
+}
+
+.produtividade { 
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    color: gray;
+}
+
+h2 { /* Titulo */
+    font-family: Anglecia Pro Display;
+    font-size: 375%;
+    text-align: start;
+    padding-left: 50px;
+    color: rgb(9, 1, 44);
+}
+
+p { /* Card description */
+    font-size: 175%;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: start;
+    color: rgb(71, 71, 71);
+}
+
+.informacoes-container { /* Cards info */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 75px;
+
+}
+.informacoes-container > .autor { /* Author label */
+    font-size: 175%;
+    padding-top: 30px;
+    color: rgb(0, 132, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.informacoes-container > .leia { /* Read More label */
+    font-size: 175%;
+    padding-top: 25px;
+    color: rgb(0, 132, 255);
+}
+
+.avatar { /* Author Avatar */
+    padding-right: 5px;
+}
+
+a { /* Links and related */
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+a:hover { 
+    color: rgb(54, 158, 255);
+    text-decoration: none;
+}
+
+.card { /* Each card */
+    width: 1600px;
+    height: 700px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 25px;
+    display: flex;
+    margin: 35px;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+.card:hover { /* Each card with the mouse on */
+    width: 1700px;
+    height: 750px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 25px;
+    display: flex;
+    margin: 35px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+img { /* Image */
+    width: 400px;
+    height: 400px;  
+}
+
+#ic1 { /* Image overlay */
+    height: 100%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    opacity: 0.85;
+    transition: 0.4s;
+}
+#note > #ic1 { /* Note image overlay */
+    background: linear-gradient(rgb(127, 155, 255), rgb(117, 101, 255))
+}
+#media > #ic1 { /* Media image overlay */
+    background: linear-gradient(rgb(252, 83, 83), rgb(252, 184, 83));
+}
+#business > #ic1 { /* Business image overlay */
+    background: linear-gradient(rgb(179, 179, 255), rgb(149, 108, 255));
+}
+
+#note > #ic1:hover { /* Note image overlay */
+    background: linear-gradient(rgb(117, 101, 255), rgb(127, 155, 255));
+    transition: 0.4s;
+}
+#media > #ic1:hover { /* Media image overlay */
+    background: linear-gradient(rgb(252, 184, 83), rgb(252, 83, 83));
+    transition: 0.4s;
+}
+#business > #ic1:hover { /* Business image overlay */
+    background: linear-gradient(rgb(149, 108, 255), rgb(179, 179, 255));
+    transition: 0.4s;
+}
+
+.conteudo-container { /* Card container without the image (text) */
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 600px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Anglecia Pro Display';
+    src: url('Anglecia Pro Display SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
